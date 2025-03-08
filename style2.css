@@ -8,21 +8,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: top;
-   padding: 10%;
+   padding: 40%;
 }
 
 
 h1 {
     color: red;
-    font-size: 28px;
-    margin-top: 20vh; 
-    text-shadow: 5px 5px 5px black;
+    font-size: 30px;
+    margin-top: 30vh; 
+    text-shadow: 10px 10px 10px black;
 }
 
 h2 {
     color:yellow; 
-    font-size: 24px;
-    text-shadow: 5px 5px 5px black; 
+    font-size: 30px;
+    text-shadow: 10px 10px 10px black; 
 }
 
 
