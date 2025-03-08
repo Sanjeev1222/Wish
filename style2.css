@@ -6,7 +6,7 @@ body {
     background-image: url('https://sanjee-v.netlify.app/background.jpg'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     text-align: top;
    padding: 40%;
 }
