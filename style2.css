@@ -1,0 +1,38 @@
+*{
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://sanjee-v.netlify.app/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: top;
+   padding: 10%;
+}
+
+
+h1 {
+    color: red;
+    font-size: 28px;
+    margin-top: 20vh; 
+    text-shadow: 5px 5px 5px black;
+}
+
+h2 {
+    color:yellow; 
+    font-size: 24px;
+    text-shadow: 5px 5px 5px black; 
+}
+
+
+
+
+
+}
+
+
+
+
+
+

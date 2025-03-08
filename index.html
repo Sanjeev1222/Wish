@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What You Want 🎁</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+    
+        .option-btn {
+            width: 180px;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .option-btn:hover {
+            background-color: #0056b3;
+        }
+
+        
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Congrats! Apko Sanjeev ki taraf se ek gift mila hai! 🎁</h1>
+    <h2>✨ To bataiye, apko inme se kya chahiye? ✨</h2>
+
+    
+    <div class="button-container">
+        <button class="option-btn" onclick="playSound('iphone')">📱 iPhone</button>
+        <button class="option-btn" onclick="playSound('girlfriend')">❤️ Girlfriend</button>
+        <button class="option-btn" onclick="playSound('money')">💰 1 Crore</button>
+        <button class="option-btn" onclick="playSound('exam')">📚 Exam me Pass</button>
+    </div>
+
+    
+    <audio id="s1" src="https://sanjee-v.netlify.app/exam.mp3"></audio>
+    <audio id="s2" src="https://sanjee-v.netlify.app/girlfreind.mp3"></audio>
+    <audio id="s3" src="https://sanjee-v.netlify.app/money.mp3"></audio>
+    <audio id="s4" src="https://sanjee-v.netlify.app/iphone.mp3"></audio>
+    <script>
+        function playSound(choice) {
+            
+            let sounds = ["s1", "s2", "s3", "s4"];
+            sounds.forEach(id => {
+                let audio = document.getElementById(id);
+                audio.pause();
+                audio.currentTime = 0;
+            });
+
+            
+            if (choice === "iphone") {
+                document.getElementById("s4").play();
+            } else if (choice === "girlfriend") {
+                document.getElementById("s2").play();
+            } else if (choice === "money") {
+                document.getElementById("s3").play();
+            }
+            else if (choice === "exam"){
+                document.getElementById("s1").play();
+            }
+            else {
+                alert("❌ No matching sound found! Try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>
